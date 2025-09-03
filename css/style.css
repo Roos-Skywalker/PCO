@@ -5,3 +5,8 @@
 h1 {
     color: #00BE00
 }
+body {
+    background-image: url("../resources/touch_grass.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
