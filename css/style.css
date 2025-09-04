@@ -1,3 +1,4 @@
+/* Global overrides */
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +10,15 @@ body {
     background-image: url("../resources/touch_grass.jpg");
     background-size: contain;
     background-repeat: repeat-x;
+}
+ul {
+
+}
+
+/* Global styling */
+#navbar {
+
+}
+.nav {
+    
 }
