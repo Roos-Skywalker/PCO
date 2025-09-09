@@ -10,6 +10,7 @@ h1 {
 body {
     background-image: url("../resources/touch_grass.jpg");
     background-size: 100% 100%;
+    background-attachment:fixed;
     background-repeat: no-repeat;
 }
 table {
@@ -23,6 +24,10 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+ol {
+    list-style-position: inside;
+    margin-left: 10vw;
 }
 
 /* Global styling */
