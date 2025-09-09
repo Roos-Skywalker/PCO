@@ -1,17 +1,41 @@
+/* Fonts */
+@font-face {
+  font-family: 'chintzy_cpu_brkregular';
+  src: url('../resources/font/chintzy-webfont.woff2') format('woff2'),
+       url('../resources/font/chintzy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cyberspaceregular';
+  src: url('../resources/font/cyberspace-webfont.woff2') format('woff2'),
+       url('../resources/font/cyberspace-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'unispacebold';
+  src: url('../resources/font/unispace_bd-webfont.woff2') format('woff2'),
+       url('../resources/font/unispace_bd-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global overrides */
 * {
     margin: 0;
     padding: 0;
     background-color: transparent;
 }
-h1 {
-    color: #00BE00
-}
 body {
+    font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
     background-image: url("../resources/touch_grass.jpg");
     background-size: 100% 100%;
     background-attachment:fixed;
     background-repeat: no-repeat;
+}
+h1 {
+  font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
 }
 table {
     border: 1px solid black;
