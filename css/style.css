@@ -23,36 +23,46 @@
 
 /* Global overrides */
 * {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
 body {
-    font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
-    color: #FFFFFF;
-    background-image: url("../resources/bg5000px.png");
-    background-size: 100% 100%;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+  font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
+  color: #FFFFFF;
+  background-image: url("../resources/bg5000px.png");
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
 }
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
 }
 table {
-    border: 1px solid black;
-    background-color: rgba(133, 133, 133, 0.5)
+  border: 1px solid black;
+  background-color: rgba(133, 133, 133, 0.5)
 }
 td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 ol {
-    list-style-position: inside;
-    margin-left: 10vw;
+  list-style-position: inside;
+  margin-left: 10vw;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }
 
 /* Global styling */
@@ -61,10 +71,9 @@ ol {
   margin: 0;
   padding: 0;
   overflow: auto;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   width: 100%;
-  opacity: 0.5;
 }
 .nav {
   float: left;
@@ -84,10 +93,13 @@ ol {
   background-color: #4593CC;
 }
 #HZlogo {
+  width: 20vh;
+  height: auto;
+}
+.textbox {
   display: flex;
   justify-content: center;
 }
-
 /* Page-specific styling */
 #monday {
   background-image: url("../resources/bgBlueData.png")
@@ -100,7 +112,7 @@ ol {
 }
 #thursday {
   background-image: url("../resources/wallpaper_thing_horizontal.png");
-  background-size: cover;
+  background-size:contain;
   background-repeat: repeat;
 }
 #friday {
