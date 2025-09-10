@@ -67,7 +67,9 @@ footer {
   width: 100%;
   margin-top: auto;
 }
-
+a {
+  color: rgb(255, 255, 255);
+}
 /* Global styling */
 .div {
   display: block;
@@ -76,7 +78,7 @@ footer {
   margin: 10px 0px 10px 0px;
   border-style: hidden;
   border-width: 100px;
-  border-radius: 2%
+  border-radius: 2%;
 }
 #navbar {
   list-style-type: none;
