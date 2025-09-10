@@ -29,7 +29,8 @@
 }
 body {
     font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
-    background-image: url("../resources/touch_grass.jpg");
+    color: #FFFFFF;
+    background-image: url("../resources/bg5000px.png");
     background-size: 100% 100%;
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -55,30 +56,53 @@ ol {
 }
 
 /* Global styling */
-    #navbar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: auto;
-      background-color: #000000;
-      top: 0;
-      width: 100%;
-      opacity: 0.5;
-    }
-    .nav {
-      float: left;
-    }
-    .nav a {
-      display: block;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    .nav a:hover:not(.active) {
-      background-color: #000000;
-      opacity: 0.5;
-    }
-    .active {
-      background-color: #4593CC;
-    }
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #000000;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+}
+.nav {
+  float: left;
+}
+.nav a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav a:hover:not(.active) {
+  background-color: #000000;
+  opacity: 0.5;
+}
+.active {
+  background-color: #4593CC;
+}
+#HZlogo {
+  display: flex;
+  justify-content: center;
+}
+
+/* Page-specific styling */
+#monday {
+  background-image: url("../resources/bgBlueData.png")
+}
+#tuesday {
+  background-image: url("../resources/bgMobile.png");
+}
+#wednesday {
+  background-image: url("../resources/kibbeling_day.jpg");
+}
+#thursday {
+  background-image: url("../resources/wallpaper_thing_horizontal.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+#friday {
+  background-image: url("../resources/touch_grass.jpg");
+}
