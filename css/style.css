@@ -30,6 +30,9 @@
 body {
   font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
   color: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url("../resources/bg5000px.png");
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -56,16 +59,25 @@ ol {
 }
 footer {
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
   bottom: 0%;
   width: 100%;
+  margin-top: auto;
 }
 
 /* Global styling */
+.div {
+  display: block;
+  background-color: rgba(133, 133, 133, 0.5);
+  padding: 100px;
+  margin: 10px 0px 10px 0px;
+  border-style: hidden;
+  border-width: 100px;
+  border-radius: 2%
+}
 #navbar {
   list-style-type: none;
   margin: 0;
