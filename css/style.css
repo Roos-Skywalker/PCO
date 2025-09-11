@@ -35,7 +35,7 @@ body {
   background-image: url("../resources/bg5000px.png");
   background-size: 100% 100%;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
@@ -69,14 +69,37 @@ footer {
 a {
   color: rgb(255, 255, 255);
 }
+aside {
+  font-size: 0;
+}
+aside:hover {
+  box-sizing: border-box;
+  width: 30vh;
+  background-color: #494949;
+  border: 1px solid black;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  list-style-type: none;
+  padding: 10px;
+  font-size: initial;
+  animation: asideSlide 0.5s forwards;
+  z-index: 3;
+}
+
 /* Global styling */
 .div {
-  display: block;
   background-color: rgba(133, 133, 133, 0.5);
   padding: 10vh;
   margin: 1vh 10vh 1vh 10vh;
   border-radius: 5%;
+  display: block;
 }
+/* #underAside{
+  position: fixed;
+  z-index: 2;
+  width: 1550px;
+  margin: 100px;
+} */
 #navbar {
   list-style-type: none;
   margin: 0;
@@ -96,7 +119,7 @@ a {
   padding: 14px 16px;
   text-decoration: none;
 }
-.nav a:hover:not(.active) {
+.aside a:hover:not(.active), .nav a:hover:not(.active) {
   background-color: rgba(0, 0, 0);
   opacity: 0.5;
 }
@@ -153,4 +176,26 @@ a {
 }
 #friday {
   background-image: url("../resources/touch_grass.jpg");
+}
+.asideTitle {
+  font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
+}
+.aside a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+}
+.asideSlide {
+  animation: asideSlideIn 2s 1
+}
+@keyframes asideSlide {
+  from {
+    width:0%;
+    font-size: 0;
+  }
+
+  to {
+    width:30vh;
+    font-size: initial;
+  }
 }
