@@ -79,11 +79,9 @@ a {
 .div {
   display: block;
   background-color: rgba(133, 133, 133, 0.5);
-  /* padding: 100px; */
-  margin: 10px 100px 10px 100px;
-  border-style: solid;
-  border-width: 10vh;
-  border-radius: 2%;
+  padding: 10vh;
+  margin: 1vh 10vh 1vh 10vh;
+  border-radius: 5%;
 }
 #navbar {
   list-style-type: none;
