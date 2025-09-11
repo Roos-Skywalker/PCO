@@ -40,6 +40,11 @@ body {
 }
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
+  font-size: 4vh;
+}
+h2 {
+  font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
+  font-size: 4vh;
 }
 table {
   border: 1px solid black;
@@ -74,10 +79,10 @@ a {
 .div {
   display: block;
   background-color: rgba(133, 133, 133, 0.5);
-  padding: 100px;
-  margin: 10px 0px 10px 0px;
-  border-style: hidden;
-  border-width: 100px;
+  /* padding: 100px; */
+  margin: 10px 100px 10px 100px;
+  border-style: solid;
+  border-width: 10vh;
   border-radius: 2%;
 }
 #navbar {
