@@ -89,7 +89,7 @@ aside:hover {
 .div {
   background-color: rgba(133, 133, 133, 0.5);
   padding: 10vh;
-  margin: 1vh 10vh 1vh 10vh;
+  margin: 1vh 10vw 1vh 10vw;
   border-radius: 5%;
   display: block;
 }
