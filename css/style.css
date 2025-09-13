@@ -93,6 +93,7 @@ aside:hover {
   border-radius: 5%;
   display: block;
 }
+/* This code changes a div element with this class into a static unscalable div element, so the animation won't push this element. */
 /* #underAside{
   position: fixed;
   z-index: 2;
