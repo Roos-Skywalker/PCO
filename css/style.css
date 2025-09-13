@@ -86,7 +86,7 @@ aside:hover {
 }
 
 /* Global styling */
-.div {
+.contentHolder {
   background-color: rgba(133, 133, 133, 0.5);
   padding: 10vh;
   margin: 1vh 10vw 1vh 10vw;
