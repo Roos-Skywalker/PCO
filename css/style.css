@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../resources/bg5000px.png");
+  background-image: url("../resources/background/bg5000px.png");
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: repeat-y;
@@ -161,21 +161,21 @@ aside:hover {
 }
 /* Page-specific styling */
 #monday {
-  background-image: url("../resources/bgBlueData.png")
+  background-image: url("../resources/background/bgBlueData.png")
 }
 #tuesday {
-  background-image: url("../resources/bgMobile.png");
+  background-image: url("../resources/background/bgMobile.png");
 }
 #wednesday {
-  background-image: url("../resources/kibbeling_day.jpg");
+  background-image: url("../resources/background/kibbelingDay.jpg");
 }
 #thursday {
-  background-image: url("../resources/red_circuitry.png");
+  background-image: url("../resources/background/redCircuitry.png");
   background-size:contain;
   background-repeat: repeat;
 }
 #friday {
-  background-image: url("../resources/touch_grass.jpg");
+  background-image: url("../resources/background/touchGrass.jpg");
 }
 .asideTitle {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
