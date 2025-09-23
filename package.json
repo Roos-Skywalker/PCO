@@ -1,0 +1,20 @@
+{
+  "name": "week-6",
+  "version": "0.0.1",
+  "description": "A HZICT Programming Basics Assignment.",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint -c ./eslint.config.mjs ./assets/**/*.js",
+    "lint:fix": "eslint -c ./eslint.config.mjs ./assets/**/*.js --fix"
+  },
+  "author": "your-name-here",
+  "license": "MIT",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.7.2",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "eslint-formatter-compact": "^8.40.0",
+    "eslint-plugin-jsdoc": "^50.2.2",
+    "eslint-plugin-no-commented-code": "^1.0.10"
+  }
+}
