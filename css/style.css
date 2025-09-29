@@ -35,7 +35,7 @@ body {
   background-image: url("../resources/background/bg5000px.png");
   background-size: 100% 100%;
   background-attachment: fixed;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
 }
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
@@ -198,8 +198,7 @@ section {
 }
 #thursday {
   background-image: url("../resources/background/redCircuitry.png");
-  background-size:contain;
-  background-repeat: repeat;
+  background-size: contain;
 }
 #friday {
   background-image: url("../resources/background/touchGrass.jpg");
