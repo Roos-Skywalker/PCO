@@ -144,13 +144,13 @@ section {
   width: 20vh;
   height: auto;
 }
-.unorderedNestedList {
+.unorderedList {
   list-style-type: none;
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
   font-size: 4vh;
   margin-bottom: 1vh;
 }
-.unorderedNestedListItem {
+.unorderedListItem {
   list-style-type: disc;
   font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
   font-size: initial;
