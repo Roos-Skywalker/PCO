@@ -127,12 +127,24 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.5;
 }
+.centeredTextBox {
+  display: flex;
+  justify-content: center;
+}
 .contentHolder {
   background-color: rgba(133, 133, 133, 0.5);
   padding: 10vh;
   margin: 1vh 10vw 1vh 10vw;
   border-radius: 5%;
   display: block;
+}
+#HZlogo {
+  width: 20vh;
+  height: auto;
+}
+.imgScaling {
+  width: 30vw;
+  height: auto;
 }
 #navbar {
   list-style-type: none;
@@ -153,22 +165,6 @@ section {
   padding: 14px 16px;
   text-decoration: none;
 }
-#HZlogo {
-  width: 20vh;
-  height: auto;
-}
-.unorderedList {
-  list-style-type: none;
-  font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
-  font-size: 4vh;
-  margin-bottom: 1vh;
-}
-.unorderedListItem {
-  list-style-type: disc;
-  font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
-  font-size: initial;
-  margin: 1vh;
-}
 .orderedList {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
   font-style: italic;
@@ -182,9 +178,17 @@ section {
   margin-left: 3vh;
   margin-bottom: 1vh;
 }
-.centeredTextBox {
-  display: flex;
-  justify-content: center;
+.unorderedList {
+  list-style-type: none;
+  font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
+  font-size: 4vh;
+  margin-bottom: 1vh;
+}
+.unorderedListItem {
+  list-style-type: disc;
+  font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
+  font-size: initial;
+  margin: 1vh;
 }
 /* Page-specific styling */
 #monday {
