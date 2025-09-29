@@ -85,7 +85,8 @@ aside:hover {
 }
 article {
   background-color: rgba(133, 133, 133, 0.5);
-  padding: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   margin: 1vh 10vw 1vh 10vw;
   border-radius: 5%;
   display: block;
