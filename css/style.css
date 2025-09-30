@@ -149,6 +149,7 @@ progress {
   margin: 1vh 10vw 1vh 10vw;
   border-radius: 5%;
   display: block;
+  overflow: auto;
 }
 #HZlogo {
   width: 20vh;
