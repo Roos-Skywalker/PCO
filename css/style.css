@@ -49,9 +49,14 @@ h2 {
 table {
   border: 1px solid black;
   background-color: rgba(133, 133, 133, 0.5);
+  display: flexbox;
+}
+tr {
+  display: inline-flexbox;
 }
 td {
   border: 1px solid black;
+  display: inline-flexbox;
 }
 ol {
   list-style-position: inside;
