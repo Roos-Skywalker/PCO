@@ -41,6 +41,7 @@ body {
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
   font-size: 4vh;
+  text-align: center;
 }
 h2 {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
@@ -138,10 +139,6 @@ progress {
 .aside a:hover:not(.active), .nav a:hover:not(.active) {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.5;
-}
-.centeredTextBox {
-  display: flex;
-  justify-content: center;
 }
 .contentHolder {
   background-color: rgba(133, 133, 133, 0.5);
