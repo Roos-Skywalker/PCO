@@ -1,187 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="keywords" content="HZ, University of Applied Sciences, project, portfolio, Github">
-        <meta name="author" content="Marijn Roos Pluijgers">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
-        <title>Dashboard</title>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');</style>
-    </head>
-    <body onload="addEvent()" class="share-tech-mono-regular" id="tuesday">
-        <script type="text/javascript" src="../assets/js/javascript.js"></script>
-        <audio id="audio" src="../resources/sound/sadTromboneSoundEffect.mp3"></audio>
-        <div>
-            <ul id="navbar">
-                <li class="nav"><a href="../home">Home</a></li>
-                <li class="nav active"><a href="../dashboard">Dashboard</a></li>
-                <li class="nav"><a href="../profile">Profile</a></li>
-                <li class="nav"><a href="../faq">FAQ</a></li>
-                <li class="nav"><a href="../blog">Blog</a></li>
-                <li class="nav"><a href="https://roos-skywalker.github.io/" target="_blank" rel="noopener noreferrer">Old site (opens in new tab)</a></li>
-            </ul>
-        </div>
-        <aside>
-            <p class="aside asideTitle">Study links</p>
-            <p class="aside"><a href="https://oer.hz.nl/b8035ee8-758f-439b-96a9-c82f5abbf2e3">HBO-ICT Course and Examination Regulations</a></p>
-            <p class="aside"><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f">Implementation Regulations</a></p>
-            <p class="aside"><a href="https://learn.hz.nl/my/">Learn environment</a></p>
-            <p class="aside"><a href="https://hz.osiris-student.nl/">MyHZ Study progress</a></p>
-            <p class="aside"><a href="https://github.com/HZ-HBO-ICT">HZ Github</a></p>
-        </aside>
-        <div class="contentHolder">
-            <h1>Try not to fail (impossible)</h1>
-        </div>
-        <div class="contentHolder">
-            <label for="NBSA">NBSA grens = 45/45</label>
-                <progress id="NBSA" value="45" max="45"></progress>
-                <table>
-                    <tr>
-                        <th>Quarter</th>
-                        <th>Course</th>
-                        <th>Test</th>
-                        <th>Weight</th>
-                        <th>EC</th>
-                        <th>Grade</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Quarter 1</td>
-                        <td>IT Personality 1</td>
-                        <td>Portfolio</td>
-                        <td>100%</td>
-                        <td>1,25</td>
-                        <td class="grade" style="background-color: rgb(8, 185, 8)">Example passing grade 5,5</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td>Program- & Career Orientation</td>
-                        <td>Presentation (individual)</td>
-                        <td>100%</td>
-                        <td>2,5</td>
-                        <td class="grade" style="background-color:rgb(184, 0, 0)" id="soundeffect">Example failing grade 5,49</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td>Computer Science basics</td>
-                        <td>Written knowledge test</td>
-                        <td>100%</td>
-                        <td>7,5</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td>Programming basics</td>
-                        <td>Case study exam</td>
-                        <td>100%</td>
-                        <td>5</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">Quarter 2</td>
-                        <td>IT Personality 2</td>
-                        <td>Portfolio</td>
-                        <td>100%</td>
-                        <td>1,25</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td rowspan="2">Object-oriented Programming</td>
-                        <td>Presentation (group)</td>
-                        <td>50%</td>
-                        <td rowspan="2">10</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td>Written knowledge test</td>
-                        <td>50%</td>
-                        <!-- <td></td> -->
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Quarter 3</td>
-                        <td>IT Personality 3</td>
-                        <td>Portfolio</td>
-                        <td>100%</td>
-                        <td>1,25</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td rowspan="3">Framework project 1</td>
-                        <td>On-site case study exam</td>
-                        <td>50%</td>
-                        <td rowspan="3">10</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td>Group presentation on project result</td>
-                        <td>25%</td>
-                        <!-- <td></td> -->
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td>Group porfolio with individual elements on requirements</td>
-                        <td>25%</td>
-                        <!-- <td></td> -->
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Quarter 4</td>
-                        <td>IT Personality 4</td>
-                        <td>Portfolio</td>
-                        <td>100%</td>
-                        <td>1,25</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <td rowspan="3">Framework project 2</td>
-                        <td>Final group delivery</td>
-                        <td>25%</td>
-                        <td rowspan="3">10</td>
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td>Individual project assessment</td>
-                        <td>25%</td>
-                        <!-- <td></td> -->
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td>IT Development portfolio</td>
-                        <td>50%</td>
-                        <!-- <td></td> -->
-                        <td class="grade">#</td>
-                    </tr>
-                    <tr>
-                        <td>Whole year</td>
-                        <td>Personal Professional Development Exploration</td>
-                        <td>Criterium focused interview</td>
-                        <td>100%</td>
-                        <td>12,5</td>
-                        <td class="grade">#</td>
-                    </tr>
-                </table>
-        </div>
-        <footer>
-            <div>
-                <a href="https://hz.nl" target="_blank" rel="noopener noreferrer"><img id="HZlogo" src="../resources/logo/hzUniversityOfAppliedSciences.png" alt="HZ University of Applied Sciences"></a>
-                <p><a href="../sitemap/">Sitemap</a></p>
-            </div>
-        </footer>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="HZ, University of Applied Sciences, project, portfolio, Github">
+  <meta name="author" content="Marijn Roos Pluijgers">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
+  <title>Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  </style>
+</head>
+
+<body onload="addEvent()" class="share-tech-mono-regular" id="tuesday">
+  <script type="text/javascript" src="../assets/js/javascript.js"></script>
+  <audio id="audio" src="../resources/sound/sadTromboneSoundEffect.mp3"></audio>
+  <div>
+    <ul id="navbar">
+      <li class="nav"><a href="../home">Home</a></li>
+      <li class="nav active"><a href="../dashboard">Dashboard</a></li>
+      <li class="nav"><a href="../profile">Profile</a></li>
+      <li class="nav"><a href="../faq">FAQ</a></li>
+      <li class="nav"><a href="../blog">Blog</a></li>
+      <li class="nav"><a href="https://roos-skywalker.github.io/" target="_blank" rel="noopener noreferrer">Old site
+          (opens in new tab)</a></li>
+    </ul>
+  </div>
+  <aside>
+    <p class="aside asideTitle">Study links</p>
+    <p class="aside"><a href="https://oer.hz.nl/b8035ee8-758f-439b-96a9-c82f5abbf2e3">HBO-ICT Course and Examination
+        Regulations</a></p>
+    <p class="aside"><a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f">Implementation Regulations</a></p>
+    <p class="aside"><a href="https://learn.hz.nl/my/">Learn environment</a></p>
+    <p class="aside"><a href="https://hz.osiris-student.nl/">MyHZ Study progress</a></p>
+    <p class="aside"><a href="https://github.com/HZ-HBO-ICT">HZ Github</a></p>
+  </aside>
+  <div class="contentHolder">
+    <h1>Try not to fail (impossible)</h1>
+  </div>
+  <div class="contentHolder">
+    <label for="NBSA">NBSA grens = 45/45</label>
+    <progress id="NBSA" value="45" max="45"></progress>
+    <table>
+      <tr>
+        <th>Quarter</th>
+        <th>Course</th>
+        <th>Test</th>
+        <th>Weight</th>
+        <th>EC</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 1</td>
+        <td>IT Personality 1</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade" style="background-color: rgb(8, 185, 8)">Example passing grade 5,5</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Program- & Career Orientation</td>
+        <td>Presentation (individual)</td>
+        <td>100%</td>
+        <td>2,5</td>
+        <td class="grade" style="background-color:rgb(184, 0, 0)" id="soundeffect">Example failing grade 5,49</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Computer Science basics</td>
+        <td>Written knowledge test</td>
+        <td>100%</td>
+        <td>7,5</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Programming basics</td>
+        <td>Case study exam</td>
+        <td>100%</td>
+        <td>5</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Quarter 2</td>
+        <td>IT Personality 2</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="2">Object-oriented Programming</td>
+        <td>Presentation (group)</td>
+        <td>50%</td>
+        <td rowspan="2">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Written knowledge test</td>
+        <td>50%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 3</td>
+        <td>IT Personality 3</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="3">Framework project 1</td>
+        <td>On-site case study exam</td>
+        <td>50%</td>
+        <td rowspan="3">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Group presentation on project result</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Group porfolio with individual elements on requirements</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 4</td>
+        <td>IT Personality 4</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="3">Framework project 2</td>
+        <td>Final group delivery</td>
+        <td>25%</td>
+        <td rowspan="3">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Individual project assessment</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>IT Development portfolio</td>
+        <td>50%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td>Whole year</td>
+        <td>Personal Professional Development Exploration</td>
+        <td>Criterium focused interview</td>
+        <td>100%</td>
+        <td>12,5</td>
+        <td class="grade">#</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <div>
+      <a href="https://hz.nl" target="_blank" rel="noopener noreferrer"><img id="HZlogo"
+          src="../resources/logo/hzUniversityOfAppliedSciences.png" alt="HZ University of Applied Sciences"></a>
+      <p><a href="../sitemap/">Sitemap</a></p>
+    </div>
+  </footer>
+</body>
+
 </html>
