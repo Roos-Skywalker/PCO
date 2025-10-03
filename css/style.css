@@ -29,6 +29,7 @@
 body {
   font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
   color: rgb(255, 255, 255);
+  overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,16 +37,17 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: repeat;
-  overflow-wrap: break-word;
 }
 h1 {
   font-family: 'cyberspaceregular', 'unispacebold', 'Unispace';
   font-size: 4vh;
+  letter-spacing: 1px;
   text-align: center;
 }
 h2 {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
   font-size: 4vh;
+  letter-spacing: 1px;
 }
 table {
   border: 1px solid black;
