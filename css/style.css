@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
   font-size: 4vh;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 table {
   border: 1px solid black;
@@ -182,6 +182,7 @@ progress {
 }
 .orderedList {
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
+  letter-spacing: 2px;
   font-style: italic;
   font-size: 4vh;
   margin-bottom: 1vh;
@@ -189,6 +190,7 @@ progress {
 .orderedListItem {
   list-style-type: decimal;
   font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
+  letter-spacing: initial;
   font-size: initial;
   margin-left: 3vh;
   margin-bottom: 1vh;
@@ -196,12 +198,14 @@ progress {
 .unorderedList {
   list-style-type: none;
   font-family: 'chintzy_cpu_brkregular', 'unispacebold', 'Unispace';
+  letter-spacing: 2px;
   font-size: 4vh;
   margin-bottom: 1vh;
 }
 .unorderedListItem {
   list-style-type: disc;
   font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
+  letter-spacing: initial;
   font-size: initial;
   margin: 1vh;
 }
