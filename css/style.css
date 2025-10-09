@@ -214,6 +214,7 @@ progress {
   font-size: initial;
   margin: 1vh;
 }
+
 /* Page-specific styling */
 #monday {
   background-image: url("../resources/background/bgBlueData.png");
