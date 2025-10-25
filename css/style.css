@@ -217,19 +217,34 @@ progress {
 }
 
 /* Page-specific styling */
+/* Home */
 #monday {
   background-image: url("../resources/background/bgBlueData.png");
 }
+
+/* Dashboard */
 #tuesday {
   background-image: url("../resources/background/bgMobile.png");
 }
+.passingGrade {
+  background-color: rgb(8, 185, 8);
+}
+.failedGrade {
+  background-color:rgb(184, 0, 0);
+}
+
+/* Profile */
 #wednesday {
   background-image: url("../resources/background/kibbelingDay.jpg");
 }
+
+/* FAQ */
 #thursday {
   background-image: url("../resources/background/redCircuitry.png");
   background-size: contain;
 }
+
+/* Blog */
 #friday {
   background-image: url("../resources/background/touchGrass.jpg");
 }
