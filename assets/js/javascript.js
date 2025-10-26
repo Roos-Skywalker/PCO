@@ -1,15 +1,22 @@
 window.addEventListener('load', onWindowLoad);
 
 /**
- * 
+ * Activate the script on page load. Use this function to call scripts that may contain parameters as well.
  */
 function onWindowLoad() {
+  getGrades();
+}
+
+/**
+ * Creates a loop to obtain all the grades in the DOM. Then call other functions to check and set play events.
+ */
+function getGrades() {
   const gradeClasses = document.getElementsByClassName('grade'); //First declare a variable that contains all DOM elements with the classname gradeElement.
   //This returns a collection, which can be iterated like an array.
   for (i = 0; i < gradeClasses.length; i++) { //Iterate through the collection, but do not use as-is.
     const gradeElement = gradeClasses[i]; //Gain access to the individual class elements. Because the parent element is looped, you gain access to them all. Work from here.
     const grade = parseFloat(gradeElement.innerText); //Declare the actual graded number inside the HTML and force it to become a number.
-    testForGrade(gradeElement, grade); // Call function to test whether the grade passes. Grade
+    testForGrade(gradeElement, grade); // Call function to test whether the grade passes.
   }
 }
 
