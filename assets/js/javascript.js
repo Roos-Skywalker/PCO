@@ -7,6 +7,10 @@ function onWindowLoad() {
   getGrades();
 }
 
+/************************************************************************************************************************************************
+ * GET GRADES FROM DOM AND ADD SOUND EVENTS
+ ************************************************************************************************************************************************/
+
 /**
  * Creates a loop to obtain all the grades in the DOM. Then call other functions to check and set play events.
  */
@@ -58,4 +62,12 @@ function addEvent(gradeElement, gradeClass) {
 function playSound(gradeClass) {
     const gradeAudioInHTML = document.getElementById(gradeClass);
     gradeAudioInHTML.play();
+}
+
+/************************************************************************************************************************************************
+ * CREATE FORM TO ADD GRADES
+ ************************************************************************************************************************************************/
+
+function createGradeObject() {
+  // Do something.
 }
