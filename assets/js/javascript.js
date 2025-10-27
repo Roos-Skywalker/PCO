@@ -31,7 +31,7 @@ function getGrades() {
  * @returns 
  */
 function testForGrade(gradeElement, grade) {
-    if (grade >= 5.5 && grade <= 10) {
+  if (grade >= 5.5 && grade <= 10) {
     gradeElement.className = 'grade passingGrade';
     return addEvent(gradeElement, 'pass'); // Sets the grade parameter value to the string 'pass'.
 
@@ -45,23 +45,23 @@ function testForGrade(gradeElement, grade) {
 }
 
 /**
- * Adds an event listener with the CSS class as the grade parameter, string type. Based on the testForGrade function is either 'pass' or 'fail'.
+ * Adds an event listener with the CSS ID as the grade parameter, string type. Based on the testForGrade function is either 'pass' or 'fail'.
  * @param {Document} gradeElement Child from the gradeClasses variable.
- * @param {className} gradeClass Child's innertext set as a string, either 'pass' or 'fail'.
+ * @param {idName} soundEffectId Corresponds to either 'pass' or 'fail' ID from the sound effects in the HTML.
  */
-function addEvent(gradeElement, gradeClass) {
+function addEvent(gradeElement, soundEffectId) {
   gradeElement.addEventListener("click", function() {
-    playSound(gradeClass);
+    playSound(soundEffectId);
   });
 }
 
 /**
- * Test whether or not the grade passes, then plays the corresponding sound.
- * @param {className} gradeClass Child's innertext set as a string, either 'pass' or 'fail'.
+ * Selects the sound effect in the HTML based on input from testForGrade function.
+ * @param {idName} soundEffectId Corresponds to either 'pass' or 'fail' ID from the sound effects in the HTML.
  */
-function playSound(gradeClass) {
-    const gradeAudioInHTML = document.getElementById(gradeClass);
-    gradeAudioInHTML.play();
+function playSound(soundEffectId) {
+  const gradeAudioInHTML = document.getElementById(soundEffectId);
+  gradeAudioInHTML.play();
 }
 
 /************************************************************************************************************************************************
