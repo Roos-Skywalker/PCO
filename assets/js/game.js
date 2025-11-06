@@ -34,11 +34,9 @@ function testForGrade(gradeElement, grade) {
   if (grade >= 5.5 && grade <= 10) {
     gradeElement.className = 'grade passingGrade';
     return addEvent(gradeElement, 'pass'); // Sets the grade parameter value to the string 'pass'.
-
   } else if (grade > 0 && grade < 5.5) {
     gradeElement.className = 'grade failedGrade';
     return addEvent(gradeElement, 'fail'); // Sets the grade parameter value to the string 'fail'.
-
   } else {
     return;
   }
