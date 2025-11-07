@@ -66,9 +66,12 @@ function playSound(soundEffectId) {
  * LOAD THE GAME
  ************************************************************************************************************************************************/
 
+/**
+ * Create an array containing all CSS and favicon data on the HTML page.
+ * @returns 
+ */
 function getCSS() {
-  const links = document.getElementsByTagName("link");
-  const link;
+  const links = document.getElementsByTagNameNS("link");
   for (i = 0; i < links.length; i++) {
     link = links[i];
     if (/stylesheet/.test(link.rel)) {
@@ -77,4 +80,21 @@ function getCSS() {
   }
 
   return sheets;
+}
+
+/**
+ * Render the CSS I guess.
+ */
+function printView() {
+  const sheet;
+  const title1 = "printVersion";
+  for (i = 0; i < sheets.length; i++) {
+    sheet = sheets[i];
+    if (sheet.title == title1) {
+      sheet.disabled = false;
+    }
+    else {
+      sheet.disabled = true;
+    }
+  }
 }
