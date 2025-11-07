@@ -5,6 +5,7 @@ window.addEventListener('load', onWindowLoad);
  */
 function onWindowLoad() {
   getGrades();
+  getCSS();
 }
 
 /************************************************************************************************************************************************
@@ -71,9 +72,10 @@ function playSound(soundEffectId) {
  * @returns 
  */
 function getCSS() {
-  const links = document.getElementsByTagNameNS("link");
+  const links = document.getElementsByTagName("link");
   for (i = 0; i < links.length; i++) {
     link = links[i];
+    console.log(link);
     if (/stylesheet/.test(link.rel)) {
       sheets.push(link);
     }
@@ -86,7 +88,6 @@ function getCSS() {
  * Render the CSS I guess.
  */
 function printView() {
-  const sheet;
   const title1 = "printVersion";
   for (i = 0; i < sheets.length; i++) {
     sheet = sheets[i];
