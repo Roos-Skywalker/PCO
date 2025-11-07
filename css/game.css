@@ -1,0 +1,12 @@
+body {
+  font-family: 'unispacebold', 'Unispace', 'Share Tech Mono';
+  color: rgb(255, 255, 255);
+  overflow-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../resources/background/bg5000px.png");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}

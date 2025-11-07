@@ -9,6 +9,7 @@
   <meta name="author" content="Marijn Roos Pluijgers">
   <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="alternate stylesheet" href="../css/game.css" type="text/css" title="Blue" />
   <title>Home</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
@@ -17,10 +18,12 @@
 
 <body class="share-tech-mono-regular" id="monday">
   <script type="text/javascript" src="../assets/js/game.js"></script>
+  <audio id="fail" src="../resources/sound/sadTromboneSoundEffect.mp3"></audio>
+  <audio id="pass" src="../resources/sound/yayyySoundEffect.mp3"></audio>
   <div>
     <ul id="navbar">
-      <li class="nav active"><a href="../home">Home</a></li>
-      <li class="nav"><a href="../dashboard">Dashboard</a></li>
+      <li class="nav"><a href="../home">Home</a></li>
+      <li class="nav active"><a href="../dashboard">Dashboard</a></li>
       <li class="nav"><a href="../profile">Profile</a></li>
       <li class="nav"><a href="../faq">FAQ</a></li>
       <li class="nav"><a href="../blog">Blog</a></li>
@@ -38,15 +41,146 @@
     <p class="aside"><a href="https://github.com/HZ-HBO-ICT">HZ Github</a></p>
   </aside>
   <div class="contentHolder">
-    <ul class="unorderedList">
-      <li>Things I am interested in studying</li>
-      <ul class="unorderedList">
-        <li class="unorderedListItem">Cambridge English C2 certification</li>
-        <li class="unorderedListItem">Python</li>
-        <li class="unorderedListItem">Java</li>
-        <li class="unorderedListItem">Unit testing and automation</li>
-      </ul>
-    </ul>
+    <label for="NBSA">NBSA threshold = 45/45</label>
+    <progress id="NBSA" value="45" max="45"></progress>
+    <table>
+      <tr>
+        <th>Quarter</th>
+        <th>Course</th>
+        <th>Test</th>
+        <th>Weight</th>
+        <th>EC</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 1</td>
+        <td>IT Personality 1</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">5.5</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Program- & Career Orientation</td>
+        <td>Presentation (individual)</td>
+        <td>100%</td>
+        <td>2,5</td>
+        <td class="grade">5.4</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Computer Science basics</td>
+        <td>Written knowledge test</td>
+        <td>100%</td>
+        <td>7,5</td>
+        <td class="grade">0</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td>Programming basics</td>
+        <td>Case study exam</td>
+        <td>100%</td>
+        <td>5</td>
+        <td class="grade">69</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Quarter 2</td>
+        <td>IT Personality 2</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="2">Object-oriented Programming</td>
+        <td>Presentation (group)</td>
+        <td>50%</td>
+        <td rowspan="2">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Written knowledge test</td>
+        <td>50%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 3</td>
+        <td>IT Personality 3</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="3">Framework project 1</td>
+        <td>On-site case study exam</td>
+        <td>50%</td>
+        <td rowspan="3">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Group presentation on project result</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Group porfolio with individual elements on requirements</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Quarter 4</td>
+        <td>IT Personality 4</td>
+        <td>Portfolio</td>
+        <td>100%</td>
+        <td>1,25</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <td rowspan="3">Framework project 2</td>
+        <td>Final group delivery</td>
+        <td>25%</td>
+        <td rowspan="3">10</td>
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>Individual project assessment</td>
+        <td>25%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td>IT Development portfolio</td>
+        <td>50%</td>
+        <!-- <td></td> -->
+        <td class="grade">#</td>
+      </tr>
+      <tr>
+        <td>Whole year</td>
+        <td>Personal Professional Development Exploration</td>
+        <td>Criterium focused interview</td>
+        <td>100%</td>
+        <td>12,5</td>
+        <td class="grade">#</td>
+      </tr>
+    </table>
   </div>
   <footer>
     <div>

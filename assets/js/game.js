@@ -63,9 +63,18 @@ function playSound(soundEffectId) {
 }
 
 /************************************************************************************************************************************************
- * CREATE FORM TO ADD GRADES
+ * LOAD THE GAME
  ************************************************************************************************************************************************/
 
-function createGradeObject() {
-  // Do something.
+function getCSS() {
+  const links = document.getElementsByTagName("link");
+  const link;
+  for (i = 0; i < links.length; i++) {
+    link = links[i];
+    if (/stylesheet/.test(link.rel)) {
+      sheets.push(link);
+    }
+  }
+
+  return sheets;
 }
